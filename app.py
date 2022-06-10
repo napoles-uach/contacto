@@ -19,4 +19,4 @@ if uploaded_file:
     mol.close()
 os.system("chmod +x a.out")
 #os.system(" ./a.out")
-os.system("more input")
+os.system("cat input")
