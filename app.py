@@ -6,4 +6,11 @@ crys = st.text_input("cristal")
 outF.write(n,n,n,"\n")
 outF.write(crys)
 outF.close()
+uploaded_files = st.sidebar.file_uploader("Choose xyz files", accept_multiple_files=True)
+for uploaded_file in uploaded_files:
+    xyz = uploaded_file.getvalue().decode("utf-8")
+    mol = open("input","w")
+    for line in xyz:
+        mol.write(line,"\n")
+    mol.close()
 os.startfile("a.out")
