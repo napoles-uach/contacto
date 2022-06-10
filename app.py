@@ -15,7 +15,7 @@ if uploaded_file:
     xyz = uploaded_file.getvalue().decode("utf-8")
     mol = open("FileInput.xyz","w")
     for line in xyz:
-        mol.write(line,"\n")
+        mol.write(line+'\n')
     mol.close()
 os.system("chmod +x a.out")
 #os.system(" ./a.out")
