@@ -15,3 +15,4 @@ for uploaded_file in uploaded_files:
         mol.write(line,"\n")
     mol.close()
 os.system(" ./a.out")
+os.system("ls")
