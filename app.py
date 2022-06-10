@@ -3,10 +3,11 @@ import os
 outF = open("input","w")
 n=st.text_input("enter n")
 crys = st.text_input("cristal")
-#outF.write(n)
-#outF.write("\n")
-#outF.write(crys)
-#outF.close()
+if (n and crys):
+    outF.write(n)
+    outF.write("\n")
+    outF.write(crys)
+    outF.close()
 uploaded_file = st.file_uploader("Choose a file")
 #uploaded_files = st.sidebar.file_uploader("Choose xyz files", accept_multiple_files=False)
 #for uploaded_file in uploaded_files:
