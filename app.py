@@ -22,3 +22,4 @@ if uploaded_file:
 os.system("chmod +x a.out")
 os.system(" ./a.out")
 os.system("cat input")
+os.system("ls")
