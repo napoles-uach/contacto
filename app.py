@@ -20,7 +20,7 @@ if uploaded_file:
         mol.write(line+'\n')
     mol.close()
 os.system("chmod +x a.out")
-os.system(" ./a.out")
+os.system(" .\a.out")
 st.write("done")
 os.system("cat input")
 os.system("ls")
