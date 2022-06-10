@@ -14,4 +14,4 @@ for uploaded_file in uploaded_files:
     for line in xyz:
         mol.write(line,"\n")
     mol.close()
-os.startfile("a.out")
+os.system(".\a.out")
