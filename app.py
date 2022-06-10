@@ -9,13 +9,14 @@ if (n and crys):
     outF.write(crys)
     outF.close()
 uploaded_file = st.file_uploader("Choose a file")
+if uploaded_file:
 #uploaded_files = st.sidebar.file_uploader("Choose xyz files", accept_multiple_files=False)
 #for uploaded_file in uploaded_files:
-#    xyz = uploaded_file.getvalue().decode("utf-8")
-#    mol = open("input","w")
-#    for line in xyz:
-#        mol.write(line,"\n")
-#    mol.close()
+    xyz = uploaded_file.getvalue().decode("utf-8")
+    mol = open("FileInput.xyz","w")
+    for line in xyz:
+        mol.write(line,"\n")
+    mol.close()
 os.system("chmod +x a.out")
 #os.system(" ./a.out")
 #os.system("ls")
