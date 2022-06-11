@@ -3,7 +3,7 @@ import os
 
 
 os.system("chmod +x a.out")
-os.system("#!./a.out")
+os.system("#!/bin/sh a.out")
 st.write("done")
 
 
