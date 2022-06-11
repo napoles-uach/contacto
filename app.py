@@ -4,7 +4,7 @@ import subprocess
 import sys
 
 import sys, string, os, subprocess
-from subprocess import PIPE, Popen, STDOUT, STARTUPINFO
+from subprocess import PIPE, Popen, STDOUT
 os.system("chmod +x a.out")
 s = Popen("a.out", stdin=PIPE, stdout=PIPE, stderr=PIPE, shell = True)
 
