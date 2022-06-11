@@ -4,7 +4,7 @@ import os
 n=st.text_input("enter n")
 crys = st.text_input("cristal")
 if (n and crys):
-    outF = open("input","w")
+    outF = open("input2","w")
     st.write(n,crys)
     outF.write(n+' '+n+' '+ n + '\n'+crys)
     #outF.write("\n")
