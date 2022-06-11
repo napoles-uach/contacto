@@ -13,8 +13,7 @@ s = Popen("a.out", stdin=PIPE, stdout=PIPE, stderr=PIPE, shell = True)
 subprocess.run(['ls','-l'])
 #os.system("#!/bin/bash a.out")
 st.write("done")
-os.system("ls")
-st.button("donde")
+
 
 
 
