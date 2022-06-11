@@ -15,8 +15,14 @@ if uploaded_file:
 #uploaded_files = st.sidebar.file_uploader("Choose xyz files", accept_multiple_files=False)
 #for uploaded_file in uploaded_files:
     xyz = uploaded_file.getvalue().decode("utf-8")
+    # add a new line when non integer is found in the xyz file
+    #for line in xyz.splitlines():
+    #    st.write(line)
+    
+
+    #st.write(xyz)
     mol = open("FileInput.xyz","w")
-    for line in xyz:
+    for line in xyz.splitlines():
         mol.write(line+'\n')
     mol.close()
 os.system("chmod +x a.out")
