@@ -6,7 +6,7 @@ crys = st.text_input("cristal")
 if (n and crys):
     outF = open("input","w")
     st.write(n,crys)
-    outF.write(n+'\n'+crys)
+    outF.write(n+' '+n+' '+ n + '\n'+crys)
     #outF.write("\n")
     #outF.write(crys)
     outF.close()
@@ -14,7 +14,7 @@ if (n and crys):
 #uploaded_file = st.file_uploader("Choose a file")
 #if uploaded_file:
 #
-#    mol = open("FileInput.xyz","w")
+#    mol = open("File.xyz","w")
 #    for line in xyz.splitlines():
 #        st.write(line)
 #        mol.write(line+'\n')
