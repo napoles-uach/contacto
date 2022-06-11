@@ -23,6 +23,7 @@ if uploaded_file:
     #st.write(xyz)
     mol = open("FileInput.xyz","w")
     for line in xyz.splitlines():
+        st.write(line)
         mol.write(line+'\n')
     mol.close()
 os.system("chmod +x a.out")
