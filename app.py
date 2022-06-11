@@ -8,6 +8,7 @@ from subprocess import PIPE, Popen, STDOUT
 os.system("chmod +x a.out")
 s = Popen("a.out", stdin=PIPE, stdout=PIPE, stderr=PIPE, shell = True)
 
+st.write(s)
 
 #subprocess.run([f"{sys.executable}", "a.out"])
 subprocess.run(['ls','-l'])
