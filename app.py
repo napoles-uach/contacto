@@ -3,12 +3,11 @@ import os
 import subprocess
 import sys
 
-import sys, string, os, subprocess
-from subprocess import PIPE, Popen, STDOUT
-os.system("chmod +x a.out")
-s = Popen("a.out", stdin=PIPE, stdout=PIPE, stderr=PIPE, shell = True)
 
-st.write(s)
+os.system("chmod +x a.out")
+
+
+
 
 #subprocess.run([f"{sys.executable}", "a.out"])
 subprocess.run(['ls','-l'])
